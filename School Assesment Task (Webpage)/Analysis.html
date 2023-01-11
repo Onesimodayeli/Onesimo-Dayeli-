@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+      <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Response Choices');
+        data.addColumn('number', 'Amount of people');
+        data.addRows([
+          ['Yes', 10],
+          ['No', 25],
+          ['Maybe', 14],
+        ]);
+
+        // Set chart options
+        var options = {'title':'Pie chart to show whether the public thinks that online transactions are safe',
+                       'width':700,
+                       'height':500};
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Response Choices');
+        data.addColumn('number', 'Amount of people');
+        data.addRows([
+          ['Yes', 22],
+          ['No', 6],
+          ['Maybe', 22],
+        ]);
+
+        // Set chart options
+        var options = {'title':'Pie chart to show whether the public thinks that online transactions are safe',
+                       'width':700,
+                       'height':500};
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
+        chart.draw(data, options);
+      }
+    </script>
+	 <script type="text/javascript">
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Response Choice');
+        data.addColumn('number', 'Amount of people');
+        data.addRows([
+          ['Yes', 31],
+          ['No', 19],
+        ]);
+
+        // Set chart options
+        var options = {'title':'Pie chart to show whether the public thinks that online transactions are safe',
+                       'width':700,
+                       'height':500};
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
+        chart.draw(data, options);
+      }
+    </script>
+  <title>Analysis</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>O</span>nesimo <span>D</span>ayeli</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="Problem.html" data-after="Problem">Problem</a></li>
+            <li><a href="#" data-after="Analysis">Analysis</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Onesimo <span></span></h1>
+        <a href="#projects" type="button" class="cta">Practical Assessment Task</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+	<section id="service">
+	<h1 class="section-title" >Analysis </h1>
+	<div class = "graphs">
+		<div class="services container">
+	 <div class="col-left">
+	<div id="chart_div"> </div>
+	</div>
+	<div class="col-right"><p>Here we see that 51% of the participants do not agree that online transactions are safe. But
+	if we take a further look into the access database underneath we can see that some of the participants (participants 
+	with ID 23,26, 32, 35, 38, 40, 41) who do agree have not taken further steps to protect their data even while agreeing t
+	hat the internet is safe. And some of the participants like the participant with ID 29 agrees that the internet is safe
+	but still has discussed website cookies mining data with her bank.</p></div>
+	</div>
+	<div class="services container">
+	 <div class="col-left">
+	<div id="chart_div1"> </div>
+	</div>
+	<div class="col-right"><p>If we take a look at the bar graph above we can observe that there is an equal number of
+	yes and no answers in the number of people that answered. This tells us that the chances are high that you could be a 
+	victim to a scam or privacy breach.</p></div>
+	</div>
+	<div class="services container">
+	 <div class="col-left">
+	<div id="chart_div2"> </div>
+	</div>
+	<div class="col-right"><p>With the clustered bar graph, we see the significant difference between the amount of 
+	people who have or have not secured their financial data. This may also be the reason why the participants are victims
+	of scams. We see that participants with ID 3, 21, 32, 36,38, 40  are victims of scams but they have taken steps to protect
+	their financial data. While participants with ID 12, 15, 23, 26, 27, 29, 31, 33, 35, 37, 41, 42, 43, 45, 46 have not tried 
+	contacting their bank for extra cybersecurity.</p></div>
+	</div>
+	</div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>O</span>nesimo <span>D</span>ayeli</h1>
+      </div>
+      <h2>YMy Practical Assessment</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Onesimo. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
